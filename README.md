@@ -1,2 +1,15 @@
-# restore_media
-shel-scripts for restore media-server on Ubuntu after re-install OS
+# Чердак-ТВ — модульная система управления медиа-сервером
+
+## Архитектура
+- Каждый модуль: `NN_name/`
+- Метаданные: `NN_name/module.conf`
+- Управление: `0.sh`
+
+## Модули
+- `10_system` — базовая настройка ОС
+- `30_headless` — VNC/RDP
+- ... (будут добавляться)
+
+## Использование
+```bash
+./0.sh
